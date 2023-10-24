@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    background-image: url(1.jpeg);
+    backdrop-filter: blur(8px);
+}
+
+
+#display{
+    height: 40px;
+    background-color: rgb(214, 224, 227);
+}
+.calculator {
+    width: 95%; 
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e3d6c7e3;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    border-block-end-style: inherit;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.calculator .btn {
+    width: 60px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.calculator .btn:hover{
+    background-color: rgb(185, 199, 194);
+}
+
+.calculator .btn.operator {
+    background-color: #ff9900;
+    color: white;
+    border-radius: 10px;
+}
+.calculator .btn.operator1{
+    background-color: rgb(125, 196, 18);
+}
+.calculator .btn.operator2{
+    width: 130px;
+    background-color: rgb(178, 207, 233);
+}
+
+.calculator .btn.clear {
+    background-color: #ff3333;
+    color: white;
+}
+   .container{
+    text-align: center;
+    height: 500px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+   } 
+
+   #newText{
+    font-size: 120%;
+    border: 5px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-weight: bolder;
+   }
+   #erase{
+    height: 50px;
+    width: 120px;
+    background-color: #ccc;
+    border-radius: 8px;
+   }
+   #erase:hover{
+    cursor: pointer;
+   }
+@media (max-width: 642px) {
+    .calculator {
+        width: 100%; 
+    }
+    .container {
+        width: 100%; 
+        margin: 0 auto;
+    }
+}
+@media(min-width:536px){
+    .calculator{
+        width:auto;
+    }
+    .container{
+        width: auto;
+    }
+}

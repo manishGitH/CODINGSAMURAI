@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="/icon.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scriptt.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <p id="newText">Welcome to the Calculator - Compute using me</p>
+    
+    <div class="calculator">
+          <input type="text" id="display" disabled>
+        <div>
+            <button class="btn operator clear" onclick="clearDisplay()">AC</button>
+            <button class="btn operator " id="percent" onclick="addToDisplay('%')">%</button>
+            <input type="button" value="DEL" id="erase" onclick= "deletekey()"/>
+        </div>
+        <div>
+            <button class="btn" onclick="addToDisplay('7')">7</button>
+            <button class="btn" onclick="addToDisplay('8')">8</button>
+            <button class="btn" onclick="addToDisplay('9')">9</button>
+            <button class="btn operator" onclick="addToDisplay('+')">+</button>
+        </div>
+        <div>
+            <button class="btn" onclick="addToDisplay('4')">4</button>
+            <button class="btn" onclick="addToDisplay('5')">5</button>
+            <button class="btn" onclick="addToDisplay('6')">6</button>
+            <button class="btn operator" onclick="addToDisplay('-')">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="addToDisplay('1')">1</button>
+            <button class="btn" onclick="addToDisplay('2')">2</button>
+            <button class="btn" onclick="addToDisplay('3')">3</button>
+            <button class="btn operator" onclick="addToDisplay('*')">*</button>
+        </div>
+        <div>
+            <button class="btn" onclick="addToDisplay('0')">0</button>
+            <button class="btn" onclick="addToDisplay('.')">.</button>
+            <button class="btn operator1" onclick="calculate()">=</button>
+            <button class="btn operator" onclick="addToDisplay('/')">/</button>     
+        </div> 
+    </div>
+    </div>
+</body>
+</html>
